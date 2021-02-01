@@ -6402,7 +6402,7 @@ const closeId = 4; // 完了の状態 ID
 const updateIssueApiUrlTemplate = template_1.default('https://<%=apiHost%>/api/v2/issues/<%=issueKey%>?apiKey=<%=apiKey%>'); // 「課題情報の更新」APIのURLテンプレート
 const commentTemplate = template_1.default('<%=name%>さんがプッシュしました\n' +
     '<% commits.forEach(commit=>{%>' +
-    '\n+ <%=commit.message%> （[<%=commit.idShort%>](<%=commit.url%>)）' +
+    '\n+ <%=commit.message%>（<%=commit.url%>）' +
     '<% }); %>'); // 通知文章のテンプレート
 /**
  * BacklogのAPIにコメントを投稿する
